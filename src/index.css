@@ -1,0 +1,523 @@
+@import '~antd/dist/antd.css';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
+  padding-right: 0px !important;
+}
+
+.mdl_content .container {
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+input:disabled, textarea:disabled {
+    color: #333;
+}
+
+.centered input {
+  text-align: center;
+}
+
+
+/* Dashboard & Project Table */
+
+.dashboard-loader {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ANTD table */
+.th.project-table-head {
+  min-width: 80px;
+}
+/* ANTD table end */
+
+.table-container.loading {
+  opacity: .3;
+}
+
+.table-loader {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+
+.select-all-loader {
+  margin: 12px;
+}
+
+.chart-container {
+    margin: 0 auto;
+}
+
+.chart-container #projects-chart {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.table-cell {
+  padding-left: 5px;
+}
+
+.incomplete-tasklist {
+    color: #6c0e0f;
+}
+
+.table-cell.tasklist-task {
+    background: #eee;
+}
+
+.container .spacer {
+  height: 24px;
+  width: 24px;
+}
+
+.tasklist-task-menu {
+  margin-top: -40px;
+}
+
+.tasklist-task {
+    width: 80px;
+}
+
+.tasklist-popover {
+  display: flex;
+  justify-content: center;
+}
+
+span.popover-close {
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+span.popover-close:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.task-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Project Table Search Inputs */
+.search-container {
+    max-width: 165px;
+}
+
+.search-input {
+  background-color: rgba(0, 0, 0, 0.14);
+  color: rgba(0, 0, 0, 0.87);
+  margin: 7px !important;
+  border-radius: 5px;
+  padding: 5px !important;
+}
+
+.search-input div::before {
+  height: 0px !important;
+}
+
+.search-input .search-button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+/* Project Table Toolbar */
+
+.toolbar-container {
+    display: flex;
+}
+
+/* Navbar */
+
+a.plain-a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.plain-a.text:hover {
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Navbar Drawer */
+
+.menu-header {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-header .title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-header .title:hover {
+  cursor: pointer;
+}
+
+/* On Boarding */
+
+.onboarding-container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+form.auth-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* alerts */
+
+.alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-top: 3px solid #6c0e0f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 90%;
+}
+
+.alert-close:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+/* account page */
+
+.account-container {
+    padding: 10px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+}
+.account-container h1 {
+  border-bottom: 4px solid #6c0e0f;
+  padding-bottom: 5px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.account-container .password-group {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-container .button-group {
+  display: flex;
+}
+
+/* Modal */
+
+.modal-close {
+  top: 5px;
+  position: fixed;
+  right: 5px;
+}
+
+.modal-close:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+/* Invitation Modal */
+
+ul.invite-list {
+    list-style: none;
+    margin-top: -10px;
+    margin-left: -35px;
+    max-width: 97%;
+}
+
+ul.invite-list li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.invite-list li:hover {
+    background: #f0e6e7;
+    cursor: pointer;
+}
+
+ul.invite-list li span {
+    width: 55px;
+    font-size: 14px;
+}
+
+.invite-title-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.invite-title-container span {
+    font-size: 12px;
+    font-weight: bold;
+    width: 65px;
+    margin-bottom: 5px;
+}
+
+.invite-title.trash {
+  margin-right: -6px;
+}
+
+/* Notes Modal on Project Table */
+.note-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 1px;
+}
+
+.note-container.unread {
+  background: #f0e6e7 !important;
+  border-radius: 5px;
+}
+
+.note-container.expanded {
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+
+.note-container:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.note-container .note-summary {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.note-container .note-toggle {
+    margin-left: auto;
+}
+
+.note-container .note-body {
+    margin: 7px 40px 10px 40px;
+    min-width: 250px;
+}
+
+/* Saved Views Modal List */
+
+span.view-header {
+  font-size: small;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.view-header h3 {
+  font-size: small;
+  font-weight: bold;
+}
+
+ul.view-list {
+    margin-top: -10px;
+    margin-left: -60px;
+    min-width: 300px;
+}
+
+ul.view-list li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 35px;
+    min-width: 400px;
+}
+
+ul.view-list li:hover {
+    background: #f0e6e7;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul.view-list li span.default {
+  margin-left: auto;
+}
+
+ul.view-list li.title {
+  font-weight: bold;
+}
+
+ul.view-list li.username {
+  font-weight: bold;
+}
+
+
+.view-item {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.delete-confirm {
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.delete-confirm h4 {
+  font-weight: bold;
+}
+
+.delete-confirm .confirm-option {
+  padding: 5px;
+  margin: 5px;
+  min-width: 45px;
+}
+
+.delete-confirm .confirm-option:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.shared-view-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -24px;
+}
+
+.shared-view-container span.title {
+    font-size: 12px;
+    font-weight: bold;
+    width: 65px;
+    margin-bottom: 5px;
+}
+
+.shared-view-container span.title.share {
+    margin-right: -18px;
+}
+
+.shared-view-container span.title.default {
+    margin-left: auto;
+    text-align: center;
+}
+
+.shared-view-container span.title.name {
+    margin-left: 25px;
+}
+
+.shared-view-container span.title.username {
+    margin-right: -20px;
+}
+
+.shared-view-container span.title.trash {
+    margin-right: -25px;
+}
+
+svg.share.filled {
+    color: #6c0e0f;
+}
+
+svg.star.filled {
+    color: #ffa500;
+}
+
+
+/* Setup Page */
+
+.setup-steps {
+  width: 90%;
+}
+
+.setup-steps .action-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.setup-steps span.error {
+  color: #d32f2f;
+  margin-top:10px;
+}
+
+/* API Step 1*/
+.api-form {
+  margin-bottom: 10px !important;
+  display: flex !important;
+  max-width: 300px;
+  align-content: flex-start;
+}
+
+.api-form input {
+  min-width: 300px;
+}
+
+.api-form span {
+    margin-bottom: 10px;
+}
+
+.api-form span.error {
+    color: #d32f2f;
+}
+
+/* Import Projects Step 2*/
+span.error {
+    color: #d32f2f;
+}
+
+/* Setup Page Log */
+.setup-log {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.setup-log ul li.log-item .message {
+  margin-left: -15px;
+}
+
+.setup-log ul li.log-item:nth-child(even) {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+svg.success {
+  color: #43a047;
+}
+
+svg.error {
+  color: #d32f2f;
+}
+
+svg.warning {
+  color: #ffa000;
+}
